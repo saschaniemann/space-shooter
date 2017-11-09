@@ -256,7 +256,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515663506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 1, y: 0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032146046}
@@ -273,7 +273,7 @@ GUIText:
   m_Text: Reset Text
   m_Anchor: 2
   m_Alignment: 2
-  m_PixelOffset: {x: -10, y: -10}
+  m_PixelOffset: {x: -50, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -652,9 +652,9 @@ GUIText:
   m_Enabled: 1
   serializedVersion: 3
   m_Text: Score Text
-  m_Anchor: 0
-  m_Alignment: 0
-  m_PixelOffset: {x: 10, y: -10}
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 90, y: -10}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -673,7 +673,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1360078105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032146046}
@@ -896,7 +896,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdca7f5b1be35a4b9c084e78489cf82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hazard: {fileID: 1057377305557460, guid: ad2af9f150c158e4f8baf6cb0e0645d9, type: 2}
+  hazard1: {fileID: 1057377305557460, guid: ad2af9f150c158e4f8baf6cb0e0645d9, type: 2}
+  hazard2: {fileID: 1079288855933826, guid: a02f8eeb262745c449c192c6413cafbe, type: 2}
+  hazard3: {fileID: 1675105581565410, guid: e4e5631229a8ecc428c83b080ad3614b, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
   hazardCount: 10
   spawnWait: 0.5
