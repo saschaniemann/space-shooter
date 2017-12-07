@@ -17,14 +17,16 @@ public class PlayerController : MonoBehaviour
 
 	public GameObject shot;
 	public Transform shotSpawn;
-	public float fireRate;
+    public double fireRate;
 
-	private float nextFire;
+	private double nextFire;
+    public static PlayerController instance;
 
-	void Start()
+    void Start()
 	{
 		ad = GetComponent<AudioSource> ();
 		rb = GetComponent <Rigidbody> ();
+        instance = this;
 	}
 
 	void Update ()
