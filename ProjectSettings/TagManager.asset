@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Boundary
   - Hazard
+  - Enemy
+  - Endboss
+  - Bolt
   layers:
   - Default
   - TransparentFX

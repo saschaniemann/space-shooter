@@ -7,6 +7,9 @@ public class Mover : MonoBehaviour
 
 	void Start ()
 	{
-		GetComponent<Rigidbody>().velocity = transform.forward * speed;
-	}
+        if(CompareTag("Hazard"))
+            GetComponent<Rigidbody>().velocity = (transform.forward * speed * GameController.instance.hazardSpeed)/ GameController.instance.firstHazardSpeed;
+        else
+            GetComponent<Rigidbody>().velocity = transform.forward * speed;
+    }
 }

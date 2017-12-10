@@ -171,6 +171,22 @@ Prefab:
       propertyPath: InitialModule.startSizeZ.minMaxState
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 19900002, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19900002, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19900000, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19900000, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
   m_IsPrefabParent: 0
@@ -234,9 +250,14 @@ Transform:
   - {fileID: 899590790}
   - {fileID: 723426548}
   - {fileID: 487084988}
+  - {fileID: 1999741329}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &377128138 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
+  m_PrefabInternal: {fileID: 36729341}
 --- !u!1 &487084987
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +298,7 @@ GUIText:
   m_Text: Life
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: -135.5, y: 140}
+  m_PixelOffset: {x: -140, y: 140}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -684,7 +705,7 @@ GUIText:
   m_Text: Faster Shooting Price
   m_Anchor: 4
   m_Alignment: 2
-  m_PixelOffset: {x: -225, y: 230}
+  m_PixelOffset: {x: -215, y: 230}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
@@ -783,7 +804,10 @@ MonoBehaviour:
   FasterShooting: {fileID: 1259544364}
   FasterShootingPrice: {fileID: 899590791}
   PlayerUpgrade: {fileID: 723426549}
-  shootingprice: 100
+  Lives: {fileID: 487084989}
+  LivesPrice: {fileID: 1999741330}
+  shootingprice: 50
+  lifeprice: 30
 --- !u!23 &1016087002
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1422,6 +1446,62 @@ Transform:
   m_Father: {fileID: 492548019}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: -115, z: 0}
+--- !u!1 &1870168795 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 62ea8a5ca94c546f29ba6dea8f379a7b, type: 2}
+  m_PrefabInternal: {fileID: 36729341}
+--- !u!1 &1912994364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1912994365}
+  - component: {fileID: 1912994366}
+  m_Layer: 0
+  m_Name: Endboss Notification
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912994365
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912994364}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.94, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2085321180}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!132 &1912994366
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912994364}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Endboss Health
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 26
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1001 &1994351611
 Prefab:
   m_ObjectHideFlags: 0
@@ -1540,6 +1620,58 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9930946b7c5f48e44aef1e56c2de7315, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1999741328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1999741329}
+  - component: {fileID: 1999741330}
+  m_Layer: 0
+  m_Name: Life Price
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1999741329
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999741328}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 2.5869339, y: -12.682608, z: 8.622465}
+  m_LocalScale: {x: 30, y: 15, z: 1}
+  m_Children: []
+  m_Father: {fileID: 352884034}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!132 &1999741330
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999741328}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Life Price
+  m_Anchor: 4
+  m_Alignment: 0
+  m_PixelOffset: {x: 180, y: 140}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 22
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &2032146045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,17 +1734,24 @@ MonoBehaviour:
   hazard1: {fileID: 1057377305557460, guid: ad2af9f150c158e4f8baf6cb0e0645d9, type: 2}
   hazard2: {fileID: 1079288855933826, guid: a02f8eeb262745c449c192c6413cafbe, type: 2}
   hazard3: {fileID: 1675105581565410, guid: e4e5631229a8ecc428c83b080ad3614b, type: 2}
+  enemy: {fileID: 1803104001414274, guid: 8d28017122a83d544997860867fb56fa, type: 2}
+  endboss: {fileID: 1982500792779852, guid: 32e5c05e7e202c041876babe47a93e7e, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
   hazardCount: 10
   spawnWait: 0.5
   startWait: 1
   waveWait: 4
+  hazardSpeed: 50
+  firstHazardSpeed: 0
+  playerLives: 3
+  wavesUntilEndboss: 15
   scoreText: {fileID: 1360078106}
   restartText: {fileID: 515663508}
   gameOverText: {fileID: 982250202}
   Waves: {fileID: 1617533392}
+  endbossText: {fileID: 1912994366}
   points: 0
-  EnemiesLives: 0
+  endbossLifepoints: 1600
 --- !u!4 &2085321180
 Transform:
   m_ObjectHideFlags: 0
@@ -1624,6 +1763,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1617533393}
+  - {fileID: 1912994365}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1821,6 +1961,8 @@ MonoBehaviour:
     zMin: -4
     zMax: 8
   shot: {fileID: 1990996291672386, guid: a48ca3c65e71c3e4fbe0903cc92402da, type: 2}
+  jet_flare: {fileID: 1870168795}
+  jet_core: {fileID: 377128138}
   shotSpawn: {fileID: 123561591}
   fireRate: 1.5
 --- !u!82 &2096332858
